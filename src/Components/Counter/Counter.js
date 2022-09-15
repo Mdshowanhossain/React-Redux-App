@@ -28,6 +28,7 @@ const Counter = () => {
       <div className="container">
         <div className="content">
           <h1>Explore React Redux</h1>
+          <h3>Counter App</h3>
 
           <h1>{count}</h1>
           <div className="btn-container">
