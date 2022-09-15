@@ -10,6 +10,7 @@ const Counter = () => {
   //   const [count, setCount] = useState(0);
 
   const count = useSelector((state) => state.count);
+
   const dispatch = useDispatch();
 
   const handleIncrement = () => {
@@ -26,11 +27,13 @@ const Counter = () => {
     <>
       <div className="container">
         <div className="content">
+          <h1>Explore React Redux</h1>
+
           <h1>{count}</h1>
           <div className="btn-container">
-            <button onClick={() => handleIncrement()}>Increment</button>
-            <button onClick={() => resetCounter()}>Reset</button>
             <button onClick={() => handleDecrement()}>Decrement</button>
+            <button onClick={() => resetCounter()}>Reset</button>
+            <button onClick={() => handleIncrement()}>Increment</button>
             {/* <button onClick={() => setCount(count + 1)}>Increment</button>
             <button onClick={() => setCount(count)}>Reset</button>
             <button onClick={() => setCount(count > 0 ? count - 1 : count)}> */}
