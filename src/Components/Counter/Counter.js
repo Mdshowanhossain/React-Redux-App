@@ -9,7 +9,9 @@ import {
 const Counter = () => {
   //   const [count, setCount] = useState(0);
 
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.counterReducer.count);
+
+  console.log(count);
 
   const dispatch = useDispatch();
 
@@ -25,10 +27,9 @@ const Counter = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="content">
-          <h1>Explore React Redux</h1>
-          <h3>Counter App</h3>
+      <div className="counter-container">
+        <div className="counter-content">
+          <h1>Counter App Redux</h1>
 
           <h1>{count}</h1>
           <div className="btn-container">
