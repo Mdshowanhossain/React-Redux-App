@@ -1,1 +1,1 @@
-# Getting Started A project React-Redux
+# Getting Started A project with React-Redux
